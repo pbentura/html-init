@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audios & videos</title>
+</head>
+<body>
+  <h1>Audios & videos</h1>
+
+  <section>
+    <h2>Video simple</h2>
+      <video src="../videos/rabbit320.webm" controls>
+          <p>Your browser doesn't support HTML5 video. Here is a <a href="../videos/rabbit320.webm">link to the video</a> instead.</p>
+      </video>
+  </section>
+
+  <section>
+      <h2>Video multiformats</h2>
+      <p>Below is a video that will play in all modern browsers</p>
+
+      <video controls>
+          <source src="../videos/rabbit320.mp4" type="video/mp4">
+          <source src="../videos/rabbit320.webm" type="video/webm">
+          <track src="../subtitles/sub_en.vtt" srclang="en" kind="subtitles">
+          <track src="../subtitles/sub_fr.vtt" srclang="fr" kind="subtitles">
+          <p>Your browser doesn't support HTML5 video. Here is a <a href="../videos/rabbit320.mp4">link to the video</a> instead.</p>
+      </video>
+  </section>
+
+  <section>
+      <h2>Video extra features</h2>
+          <video controls width="400" height="400" loop muted preload="auto" poster="../images/poster.png">
+          <source src="../videos/rabbit320.mp4" type="video/mp4">
+          <source src="../videos/rabbit320.webm" type="video/webm">
+          <p>Your browser doesn't support HTML5 video. Here is a <a href="../videos/rabbit320.mp4">link to the video</a> instead.</p>
+      </video>
+  </section>
+
+  <section>
+      <h2>Video from youtube</h2>
+      <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/oEAuNzWXRjM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+      ></iframe>
+  </section>
+
+  <section>
+      <h2>Audio simple</h2>
+      <audio controls src="../videos/viper.ogg">
+          <p>Your browser doesn't support HTML5 audio. Here is a <a href="../videos/viper.mp3">link to the audio</a> instead.</p>
+      </audio>
+  </section>
+
+  <section>
+      <h2>Audio multiformats</h2>
+      <p>Below is an audio player that will play in all modern browsers</p>
+
+      <audio controls>
+          <source src="../videos/viper.mp3" type="audio/mp3">
+          <source src="../videos/viper.ogg" type="audio/ogg">
+          <p>Your browser doesn't support HTML5 audio. Here is a <a href="../videos/viper.mp3">link to the audio</a> instead.</p>
+      </audio>
+  </section>
+
+</body>
+</html>
